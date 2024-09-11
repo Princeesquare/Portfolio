@@ -1,0 +1,67 @@
+body {
+    font-family: "Reddit Sans Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 10px 20px 20px 30px;
+    background-color: #faf9f6;
+}
+
+span{
+    color: darkcyan;
+}
+
+.body-container{
+    display: grid;
+    grid-template-rows: 1fr, 1fr;
+    grid-template-columns: 100px, 200px, 200px;    
+    gap: 50px;
+}
+
+.info{
+    grid-column: span 2;
+    padding: 10px;
+}
+
+h1{
+    font-size: 5rem;
+    margin: 2px;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+#card-note{
+margin-top: -15px;
+text-align: justify;
+}
+
+.card-img{
+    height: 200px;
+    float: left;
+    margin-right: 20px;
+}
+
+footer{
+text-align: center;
+margin-top: 50px;
+}
+
+@media (max-width: 600px){
+    span{
+        color:royalblue;
+    }
+    .body-container{
+        display: inline-block;
+    }
+    body{
+        font-weight: 300;
+    }
+    .card-img{
+        margin-right: 20px;
+    }
+    footer {
+        font-size: large;
+        font-weight: bold;
+    }
+}
