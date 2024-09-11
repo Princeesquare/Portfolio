@@ -4,6 +4,23 @@ html {
   /* background-size: contai; */
   color: white;
 }
+
+.logo{
+  width: 350px ;
+  height: 100px;
+}
+
+.navbar{
+  display: flex;
+  /* gap: 3rem; */
+  margin-top: 20px;
+  justify-content: space-around;
+}
+
+/* .navbar > * {
+  flex-basis: 100px;
+} */
+
 a {
   color: deepskyblue;
 }
