@@ -26,12 +26,10 @@ body {
 }
 
 .navbar{
-    display: flex;
     background-color: #3a506b;
     padding: 15px 0;
     border-radius: 5px;
     margin-bottom: 5px;
-    justify-content: space-around;
 }
 
 .navbar a {
@@ -131,7 +129,7 @@ footer{
         margin-bottom: 30px;
     }
 
-    .navbar a {
+    .navbar a{
         display: block;
         margin: 10px 0;
       }
