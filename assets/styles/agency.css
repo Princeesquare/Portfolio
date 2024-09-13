@@ -1,27 +1,50 @@
 body {
     font-family: "Reddit Sans Condensed", sans-serif;
     font-weight: 400;
-    font-style: normal;
-    margin: 10px 30px 0px 30px;
-    background-color:#f0f3f5;
+    font-style: normal;    
+    background-color: #f0f3f5;
     line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 
-.main {
+.main, .header, .header-container{
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto;  
+}
+
+.main {
     padding: 20px;
+    padding-top: 150px;
+}
+
+.header-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    border-radius: 5px;
+    background-color: #142852ec;
+    z-index: 1000;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header {
-    text-align: center;
-    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 20px;
+    position: relative;
+}
+
+.header-container, .logo, .main {
+    transition: all 0.5s ease;
 }
 
 .logo{
-    max-width: 200px ;
+    max-width: 150px ;
     height: auto;
 }
 
@@ -73,7 +96,7 @@ h2{
     margin-top: 15px;
 }
 
-.beauty, .construction {
+.cards {
     background-color:#ffffff;
     border-radius: 10px;
     padding: 15px;
@@ -81,9 +104,9 @@ h2{
     transition: all 0.5s ease;
 }
 
-.beauty:hover, .construction:hover {
+.cards:hover{
     transform: translateY(-15px);
-    box-shadow: 20px 15px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 20px 15px 15px rgba(62, 185, 207, 0.418);
 }
 
 .card-img{
@@ -106,7 +129,7 @@ footer{
     text-align: center;
     margin-top: 50px;
     padding: 20px 0;
-    background-color: #3a506b;
+    background-color: #142852ec;
     color:  #f0f3f5;
     border-radius: 5px;
 }
@@ -121,6 +144,26 @@ footer{
 
     body{
         font-weight: 200;
+    }
+
+    .main, .header, .header-container{
+        max-width: 600px;
+        margin: 0 auto;  
+    }
+
+    .main{
+        padding: 15px;
+        padding-top: 120px;
+    }
+
+    .header-container, .header{
+        position: absolute;
+        height: 80px;
+        padding: 0 15px;
+    }
+
+    .logo{
+        max-width: 150px;
     }
 
     .container{
@@ -151,8 +194,8 @@ footer{
         object-fit: cover;
     }
     
-    .beauty, .construction {
-        margin-bottom: 25px;
+    .cards{
+        margin-bottom: 20px;
     }
 
     footer {

@@ -1,0 +1,150 @@
+:root {
+  --primary-color: #3a506b;
+  --secondary-color: #5bc0be;
+  --text-color: #0b132b;
+  --background-color: #f0f3f5;
+  --card-background: #ffffff;
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  background-color: var(--primary-color);
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+  max-width: 150px;
+  height: auto;
+}
+
+.navbar {
+  background-color: var(--secondary-color);
+  padding: 10px 0;
+}
+
+.navbar a {
+  color: var(--background-color);
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  transition: var(--transition);
+}
+
+.navbar a:hover {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 0;
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  color: var(--background-color);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 30px 0;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: var(--secondary-color);
+  margin: 40px 0;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.project-card {
+  background-color: var(--card-background);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+  transition: var(--transition);
+  width: calc(50% - 20px);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.project-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-info a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: 100%;
+  }
+
+  .hero {
+    padding: 60px 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
