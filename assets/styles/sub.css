@@ -49,18 +49,19 @@
   
   .pricing-container{
     display: flex;
-    justify-content: space-around; 
-    gap: 10px;
-    margin: 50px;
+    justify-content: center; 
+    align-items: center;
+    gap: 2rem;
+    padding-top: 20px;
 }
 
 .pricing-plan {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex: 1;
+    /* max-width: 400px; */
+    padding: 20px;
     background-color:#ffffff;
     border-radius: 10px;
-    padding: 15px;
+    text-align: center;
     box-shadow: 10px 14px 6px rgba(62, 185, 207, 0.5); 
 }
 
@@ -107,6 +108,6 @@ button:hover{
     .pricing-container{
         flex-direction: column;
         gap: 50px;
+        height: 100%;
     }
-
 }

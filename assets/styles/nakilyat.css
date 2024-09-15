@@ -1,0 +1,75 @@
+/* body{
+    height: 100vh;
+} */
+.navbar-brand{
+    color: rgba(2, 165, 2, 0.85);
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand:hover{
+    color: rgba(252, 165, 4, 0.85);
+}
+
+.dropdown-menu{
+    border: none;
+    background-color: transparent;
+}
+
+.carousel{
+    padding-top: 100px;
+}
+
+.icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: .75rem;
+}
+
+.feature-img{
+    background-color: rgba(2, 165, 2, 0.85);
+}
+
+.feature-img:hover{
+    background-color: rgba(252, 165, 4, 0.85);
+}
+
+.btn-primary{
+    border: none;
+    background-color: rgba(252, 165, 4, 0.85);
+}
+
+.btn:hover{
+    background-color: rgba(2, 165, 2, 0.85);
+}
+
+.card-1{
+    background-image: url(../images/AYN/AYN_daf.jpg);
+}
+
+.card-2{
+    background-image: url(../images/AYN/AYN_white.avif);
+}
+
+.card-3{
+    background-image: url(../images/AYN/AYN_van.jpg);
+}
+
+.card-cover {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.card-text{
+    background-color: rgba(68, 66, 62, 0.363);
+    margin-left: -30px;
+    font-weight: bold;
+}
